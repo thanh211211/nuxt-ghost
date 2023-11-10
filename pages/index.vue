@@ -34,6 +34,7 @@ import { getPosts } from '~/api/posts';
 export default {
   async asyncData () {
     const posts = await getPosts();
+    //const a = await createPost(null);   
     return { posts: posts }
   }
 }

@@ -3,6 +3,7 @@
         <main>
             <h1>{{ post.title }}</h1>
             <div class="content">
+                <img :src="post.feature_image">
                 <div v-html="post.html">{{ post.html }}</div>
             </div>
         </main>
@@ -16,6 +17,7 @@ import { getSinglePost } from '~/api/posts';
 export default {
   async asyncData ({params}) {
     const post = await getSinglePost(params.slug);
+    console.log(post);
     return { post: post }
   }
 }

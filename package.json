@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tryghost/content-api": "^1.2.9",
+    "fs": "^0.0.1-security",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
